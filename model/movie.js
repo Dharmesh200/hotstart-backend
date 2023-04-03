@@ -1,15 +1,15 @@
 
-const {model,Schema}=require("mongoose");
+const { model, Schema } = require("mongoose");
 
-const MovieSchema=new Schema({
-    title:{
+const MovieSchema = new Schema({
+    title: {
         type: String,
     },
-    genere:{
+    genere: {
         type: String,
     },
-    releasedate:{
-        type:Number,
+    releasedate: {
+        type: Number,
     },
     // poster:{
     //     type:[""]
@@ -17,11 +17,11 @@ const MovieSchema=new Schema({
     // trailer:{
     //     type:[""]
     // },
-    media:{
-        type:[''],
+    media: {
+        type: [''],
     }
 },
-{timestamps:true,}
+    { timestamps: true, }
 )
 
-module.exports=model("movie",MovieSchema)
+module.exports = model("movie", MovieSchema)
